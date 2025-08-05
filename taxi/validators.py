@@ -16,6 +16,6 @@ def license_number_validator(license_number: str) -> AnyStr:
 
     if not license_number[3:].isdigit():
         raise ValidationError(
-        "license number must ends with 5 digits."
-    )
+            "license number must ends with 5 digits."
+        )
     return license_number
