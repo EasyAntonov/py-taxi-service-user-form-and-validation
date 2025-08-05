@@ -11,7 +11,7 @@ def license_number_validator(license_number: str) -> AnyStr:
 
     if not license_number[:3].isalpha() or not license_number[:3].isupper():
         raise ValidationError(
-            "License number must start with a 3 uppercase letter."
+            "License number must start with 3 uppercase letter."
         )
 
     if not license_number[3:].isdigit():
